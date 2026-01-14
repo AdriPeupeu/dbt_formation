@@ -2,13 +2,13 @@ version: 2
 
 sources:
   - name: jaffle_shop
-    database: raw
-    schema: jaffle_shop
+    database: formation_adauphin
+    schema: formation_raw_jaffle_shop
     tables:
       - name: customers
       - name: orders
   - name: stripe
-    database: raw
-    schema: stripe
+    database: formation_adauphin
+    schema: formation_raw_stripe
     tables:
       - name: payment
