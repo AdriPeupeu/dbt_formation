@@ -5,3 +5,4 @@ dbt_packages/
 logs/
 secret/
 profiles.yml
+.user.yml
