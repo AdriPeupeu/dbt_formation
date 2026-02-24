@@ -1,0 +1,12 @@
+snow_profile:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      database: analytics
+      schema: default
+      warehouse: transforming
+      # Secrets depend of user:
+      account: "{{ env_var('DBT_ACCOUNT') }}"
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
